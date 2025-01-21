@@ -15,10 +15,14 @@
   background-image: url(./assets/bg.png);
 }
 
+
 marquee{
   color: aqua;
   font-size: 1.5rem;
 
+}
+header{
+  margin-bottom: 50px;
 }
 /* navbar styles  */
 .navbar{
@@ -27,6 +31,7 @@ width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 100px;
   
 }
 .logo{
@@ -120,16 +125,34 @@ color: red;
 }
 
 /* design and styles banner section  */
+.curriculam{
+  margin-top: 100px;
+}
+.standard{
 
-.banner{
-  width: 100%;
-  display: flex;
-align-items: center;
-  gap: 50px;
-  margin-left: 140px;
-  margin-right: 140px;
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 2.5rem;
+font-weight: 700;
+line-height: 57.5px;
+letter-spacing: 0%;
+text-align: center;
 
 }
+.banner{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  
+
+}
+.banner-title{
+width: 640px;
+height: 331px;
+}
+
 
 .banner-heading{
 font-size: 3.5rem;
@@ -168,9 +191,122 @@ background-color: rgb(17, 17, 17);
 
 }
 .banner-image{
-width: 100%;
-margin: 0 auto;
+width: 468.61px;
+height: 575px;
+
 }
+
+/*  main section start  */
+
+.curriculam{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.curriculam-title>h1{
+color: rgb(0, 0, 0);
+font-size: 2.8 rem;
+font-weight: 700;
+line-height: 57.5px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.card1{
+width: 367.8px;
+height: 476.78px;
+box-sizing: border-box;
+border: 0.94px solid rgb(222, 245, 255);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card2{
+
+width: 367.8px;
+height: 481.5px;
+box-sizing: border-box;
+border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card3{
+width: 367.8px;
+height: 476.78px;
+box-sizing: border-box;
+border: 0.94px solid rgb(242, 232, 255);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+a{
+  text-decoration: none;
+}
+.read2{
+  color: rgb(240, 170, 0);
+}
+.read3{
+  color: rgb(135, 0, 255);
+}
+.card-box{
+  padding: 64px 39px 63px 39px;
+  text-align: center;
+
+}
+.kinder{
+color: rgb(32, 32, 32);
+font-size: 1.5rem;
+font-weight: 700;
+
+
+}
+.kinder-description{
+width: 286px;
+height: 74px;
+font-family: Raleway;
+font-size: 1rem;
+
+
+
+}
+.btn-primary{
+
+color: rgb(100, 200, 255);
+font-family: Quicksand;
+font-size: 1rem;
+font-weight: 700;
+line-height: 28px;
+border: none;
+
+}
+.btn-primary2{
+
+color: rgb(240, 170, 0);
+font-family: Quicksand;
+font-size: 1rem;
+font-weight: 700;
+line-height: 28px;
+border: none;
+
+}
+.btn-primary3{
+
+color: rgb(135, 0, 255);
+font-family: Quicksand;
+font-size: 1rem;
+font-weight: 700;
+line-height: 28px;
+border: none;
+
+}
+.card-container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 
 /* responsive media query for mobile device  */
@@ -178,6 +314,17 @@ margin: 0 auto;
 @media screen and (max-width:576px){
   .menu,.button,.logo h1{
     display:none;
+  }
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    gap: 20px;
+   
+  }
+  .standard{
+    display:flex;
+    justify-content: center;
+    text-align: center;
   }
 .navbar{
   display: flex;
@@ -206,6 +353,7 @@ flex-direction: column-reverse;
 .banner-description{
   text-align: center;
 }
+
 .banner-title{
 
 margin: 0 auto;
