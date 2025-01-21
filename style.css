@@ -266,6 +266,7 @@ width: 286px;
 height: 74px;
 font-family: Raleway;
 font-size: 1rem;
+text-align: justify;
 
 
 
@@ -320,6 +321,115 @@ margin: 80px 0px;
   border: none;
   font-size: 20px;
   font-weight: 600;
+}
+
+/* our stories styles  */
+.stores-image{
+width: 540px;
+border: 1px solid tomato;
+border-radius: 16px;
+border-radius: 16px;
+border: none;
+background: rgb(255, 255, 255);
+}
+.stores-image img{
+border-radius: 16px 16px 0px 0px;
+}
+.Our-Stories-container{
+  background: url(./assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+
+.stores-container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+.stores{
+width: 290px;
+border: 1px solid wheat;
+border-radius: 16px 16px 0px 0px;
+background: rgb(255, 255, 255);
+border: none;
+}
+.stores img{
+  border-radius: 16px 16px 0px 0px
+}
+.small-image{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.btn-store{
+
+margin-left: 100px;
+margin-top: -100px;
+}
+.btn{
+width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(60, 216, 232);
+font-size: 1rem;
+border: none;
+margin-left: 38px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+
+
+}
+.btn1{
+  width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(149, 178, 38);
+font-size: 1rem;
+border: none;
+margin-left: 20px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+}
+.btn2{
+  width: 240px;
+height: 70px;
+border-radius: 8px;
+border-radius: 47.93px;
+background: rgb(93, 88, 240);
+font-size: 1rem;
+border: none;
+margin-left: 20px;
+margin-top: -120px;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+}
+.kin{
+color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 15.34px;
+font-weight: 700;
+line-height: 28.76px;
+letter-spacing: 0%;
+
+padding-left: 30px;
+padding-right: 20px;
+}
+.kin-description{
+  color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+line-height: 28.76px;
+letter-spacing: 0%;
+
+text-align: justify;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 
@@ -389,6 +499,15 @@ object-fit: cover;
     gap: 20px;
    ;
    
+  }
+
+  .stores-image{
+    display: none;
+  }
+  .stores-container{
+    display: flex;
+    flex-direction: column;
+
   }
 
 
