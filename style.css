@@ -10,17 +10,14 @@
   font-style: normal;
 }
 
-*{
-  
-  background-image: url(./assets/bg.png);
-}
-
-
-marquee{
-  color: aqua;
-  font-size: 1.5rem;
+.bg{
+   background-image: url(./assets/bg.png); 
 
 }
+
+
+
+
 header{
   margin-bottom: 50px;
 }
@@ -118,16 +115,10 @@ border: none;
 hr{
   visibility: hidden;
 }
- .blink {
-animation: blinker 1.5s linear infinite;
-color: red;
 
-}
 
 /* design and styles banner section  */
-.curriculam{
-  margin-top: 100px;
-}
+
 .standard{
 
 color: rgb(0, 0, 0);
@@ -137,6 +128,7 @@ font-weight: 700;
 line-height: 57.5px;
 letter-spacing: 0%;
 text-align: center;
+margin-bottom: 100px;
 
 }
 .banner{
@@ -144,6 +136,7 @@ text-align: center;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 100px;
 
   
 
@@ -267,9 +260,6 @@ height: 74px;
 font-family: Raleway;
 font-size: 1rem;
 text-align: justify;
-
-
-
 }
 .btn-primary{
 
@@ -282,24 +272,20 @@ border: none;
 
 }
 .btn-primary2{
-
 color: rgb(240, 170, 0);
 font-family: Quicksand;
 font-size: 1rem;
 font-weight: 700;
 line-height: 28px;
 border: none;
-
 }
 .btn-primary3{
-
 color: rgb(135, 0, 255);
 font-family: Quicksand;
 font-size: 1rem;
 font-weight: 700;
 line-height: 28px;
 border: none;
-
 }
 .card-container{
   width: 100%;
@@ -344,8 +330,7 @@ border-radius: 16px 16px 0px 0px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-
-  
+  margin-bottom: 80px;
 }
 .stores{
 width: 290px;
@@ -360,7 +345,7 @@ border: none;
 .small-image{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 .btn-store{
 
@@ -379,8 +364,6 @@ margin-left: 38px;
 margin-top: -120px;
 color: rgb(255, 255, 255);
 font-family: Raleway;
-
-
 }
 .btn1{
   width: 240px;
@@ -415,21 +398,114 @@ font-size: 15.34px;
 font-weight: 700;
 line-height: 28.76px;
 letter-spacing: 0%;
-
 padding-left: 30px;
 padding-right: 20px;
 }
 .kin-description{
-  color: rgb(102, 102, 102);
+color: rgb(102, 102, 102);
 font-family: Raleway;
 font-size: 15.34px;
 font-weight: 500;
 line-height: 28.76px;
 letter-spacing: 0%;
-
 text-align: justify;
 padding-left: 30px;
 padding-right: 30px;
+}
+.btn-black2{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+margin: 0 auto;
+border: none;
+color: rgb(255, 255, 255);
+font-size: 1.25rem;
+font-weight: 700;
+border-radius: 12px;
+background-color: rgb(17, 17, 17);
+}
+
+
+/* footer section style  */
+.footer{
+  background-color: rgb(1, 172, 253);
+ height: fit-content;
+}
+
+.footer-container{
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-bottom: 100px;
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+}
+
+.menus>nav>ul{
+  list-style: none;
+  
+
+}
+.logo-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-title img{
+  width: 200px;
+  height: 200px;
+}
+.logo-title>h1{
+  color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 2.8rem;
+font-weight: 700;
+line-height: 39.51px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.colum{
+ display: flex;
+ flex-direction: column;
+ width: 300px;
+ height: 400px;
+margin-top: 100px;
+}
+
+
+
+.item >a{
+  font-size: 1.25rem;
+width: 57.87px;
+height: 25px;
+left: 719.73px;
+top: 2757px;
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.icon{
+
+
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 1.6rem;
+font-weight: 700;
+line-height: 30px;
+
+}
+
+.icon img{
+  padding: 10px;
 }
 
 
@@ -501,13 +577,19 @@ object-fit: cover;
    
   }
 
-  .stores-image{
+  .stores-image,marquee{
     display: none;
   }
   .stores-container{
     display: flex;
     flex-direction: column;
 
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: 1;
+    padding-left: 50px;
   }
 
 
